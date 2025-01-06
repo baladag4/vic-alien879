@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Vitória - Curas interiores e expansão de consciência</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#8A2BE2',
+                        secondary: '#FF69B4',
+                        accent: '#4CAF50',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins bg-purple-50">
+    <header class="bg-primary text-white py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Magic Vitória</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#sobre" class="hover:text-purple-200 transition duration-300">Sobre</a></li>
+                    <li><a href="#servicos" class="hover:text-purple-200 transition duration-300">Serviços</a></li>
+                    <li><a href="#contato" class="hover:text-purple-200 transition duration-300">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="py-20 bg-primary text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold mb-4">Curas interiores e expansão de consciência</h2>
+                <p class="text-xl mb-8">Descubra o poder da cura interior e expanda sua consciência com Magic Vitória</p>
+                <a href="#servicos" class="bg-white text-primary py-2 px-6 rounded-full font-bold hover:bg-purple-100 transition duration-300">Agende sua consulta</a>
+            </div>
+        </section>
+
+        <section id="sobre" class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center text-primary">Sobre Magic Vitória</h2>
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <img src="perfil-cliente.png" alt="Magic Vitória" class="rounded-lg h-80  shadow-lg">
+                    </div>
+                    <div class="md:w-1/2 md:pl-8">
+                        <p class="text-lg mb-4">Magic Vitória é uma terapeuta holística especializada em curas interiores e expansão de consciência. Com anos de experiência e uma abordagem única, ela ajuda seus clientes a alcançarem o equilíbrio emocional, mental e espiritual.</p>
+                        <p class="text-lg">Através de técnicas avançadas de cura energética, meditação e terapia, Magic Vitória guia seus clientes em uma jornada de autodescoberta e transformação pessoal.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center text-primary">Nossos Serviços</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Serviço 1 -->
+                    <div class="bg-purple-100 p-6 rounded-lg shadow-md">
+                        <img src="IMG_0878.webp" alt="Ativação de Códigos de Luz" class="w-full h-40 object-cover rounded mb-4">
+                        <h3 class="text-xl font-bold mb-4 text-primary">Ativação de Códigos de Luz</h3>
+                        <p class="mb-4">Alinhamento com a alma e a verdade divina</p>
+                        <p class="font-bold mb-4">
+                            <span class="line-through text-gray-500">R$ 320,00</span>
+                            <span class="text-black">R$ 190,00</span>
+                        </p>
+                        <div class="flex justify-between">
+                            <button onclick="openModal('ativacao')" class="bg-secondary text-white px-4 py-2 rounded hover:bg-opacity-80 transition">Mais opções</button>
+                            <a href="#" class="bg-accent text-white px-4 py-2 rounded hover:bg-opacity-80 transition" data-link="https://pay.kiwify.com.br/oBMYnL1">Comprar agora</a>
+                        </div>
+                    </div>
+                    <!-- Serviço 2 -->
+                    <div class="bg-purple-100 p-6 rounded-lg shadow-md">
+                        <img src="IMG_0880.webp" alt="Constelação Sistêmica Familiar" class="w-full h-40 object-cover rounded mb-4">
+                        <h3 class="text-xl font-bold mb-4 text-primary">Constelação Sistêmica Familiar</h3>
+                        <p class="mb-4">Resolução de questões familiares e ancestrais</p>
+                        <p class="font-bold mb-4">
+                            <span class="line-through text-gray-500">R$ 340,00</span>
+                            <span class="text-black">R$ 250,00</span>
+                        </p>
+                        <div class="flex justify-between">
+                            <button onclick="openModal('constelacao')" class="bg-secondary text-white px-4 py-2 rounded hover:bg-opacity-80 transition">Mais opções</button>
+                            <a href="#" class="bg-accent text-white px-4 py-2 rounded hover:bg-opacity-80 transition" data-link="https://pay.kiwify.com.br/oBMYnL1">Comprar agora</a>
+                        </div>
+                    </div>
+                    <!-- Serviço 3 -->
+                    <div class="bg-purple-100 p-6 rounded-lg shadow-md">
+                        <img src="IMG_0885.webp" alt="Comunicação Telepática Animal" class="w-full h-40 object-cover rounded mb-4">
+                        <h3 class="text-xl font-bold mb-4 text-primary">Comunicação Telepática Animal</h3>
+                        <p class="mb-4">Conexão com animais para entender suas necessidades</p>
+                        <p class="font-bold mb-4">
+                            <span class="line-through text-gray-500">R$ 320,00</span>
+                            <span class="text-black">R$ 80,00</span>
+                        </p>
+                        <div class="flex justify-between">
+                            <button onclick="openModal('comunicacao')" class="bg-secondary text-white px-4 py-2 rounded hover:bg-opacity-80 transition">Mais opções</button>
+                            <a href="#" class="bg-accent text-white px-4 py-2 rounded hover:bg-opacity-80 transition" data-link="https://pay.kiwify.com.br/oBMYnL1">Comprar agora</a>
+                        </div>
+                    </div>
+
+                      <!-- Serviço 4 -->
+                      <div class="bg-purple-100 p-6 rounded-lg shadow-md">
+                        <img src="IMG_0903.webp" alt="Comunicação Telepática Animal" class="w-full h-40 object-cover rounded mb-4">
+                        <h3 class="text-xl font-bold mb-4 text-primary">Expansão para o cosmos</h3>
+                        <p class="mb-4">Também é um atendimento para você lembrar de outras vivências suas pelo universo e outros mundos...</p>
+                        <p class="font-bold mb-4">
+                            <span class="line-through text-gray-500">R$ 320,00</span>
+                            <span class="text-black">R$ 180,00</span>
+                        </p>
+                        <div class="flex justify-between">
+                            <button onclick="openModal('cosmos')" class="bg-secondary text-white px-4 py-2 rounded hover:bg-opacity-80 transition">Mais opções</button>
+                            <a href="#" class="bg-accent text-white px-4 py-2 rounded hover:bg-opacity-80 transition" data-link="https://pay.kiwify.com.br/oBMYnL1">Comprar agora</a>
+                        </div>
+                    </div>
+
+                      <!-- Serviço 5 -->
+                      <div class="bg-purple-100 p-6 rounded-lg shadow-md">
+                        <img src="IMG_0906.webp" alt="Comunicação Telepática Animal" class="w-full h-40 object-cover rounded mb-4">
+                        <h3 class="text-xl font-bold mb-4 text-primary">Conexão com seu amor de alma</h3>
+                        <p class="mb-4">Viver um amor de alma, bonito, profundo cheio de amor e companheirismo todos nós merecemos. Merecemos nos abrir para viver o amor com a pessoa especial, sorrir, passear, curtir, criar uma estrutura séria, estar...</p>
+                        <p class="font-bold mb-4">
+                            <span class="line-through text-gray-500">R$ 320,00</span>
+                            <span class="text-black">R$ 180,00</span>
+                        </p>
+                        <div class="flex justify-between">
+                            <button onclick="openModal('gemeos')" class="bg-secondary text-white px-4 py-2 rounded hover:bg-opacity-80 transition">Mais opções</button>
+                            <a href="#" class="bg-accent text-white px-4 py-2 rounded hover:bg-opacity-80 transition" data-link="https://pay.kiwify.com.br/oBMYnL1">Comprar agora</a>
+                        </div>
+                    </div>
+
+                      <!-- Serviço 6 -->
+                      <div class="bg-purple-100 p-6 rounded-lg shadow-md">
+                        <img src="IMG_0893.webp" alt="Comunicação Telepática Animal" class="w-full h-40 object-cover rounded mb-4">
+                        <h3 class="text-xl font-bold mb-4 text-primary">Chuva da prosperidade</h3>
+                        <p class="mb-4">Através da ativação de códigos de luz vamos trabalhar em todo o seu ser tudo aquilo que você está precisando neste momento para o dinheiro começar a fluir...</p>
+                        <p class="font-bold mb-4">
+                            <span class="line-through text-gray-500">R$ 320,00</span>
+                            <span class="text-black">R$ 180,00</span>
+                        </p>
+                        <div class="flex justify-between">
+                            <button onclick="openModal('money')" class="bg-secondary text-white px-4 py-2 rounded hover:bg-opacity-80 transition">Mais opções</button>
+                            <a href="#" class="bg-accent text-white px-4 py-2 rounded hover:bg-opacity-80 transition" data-link="https://pay.kiwify.com.br/oBMYnL1">Comprar agora</a>
+                        </div>
+                    </div>
+
+                      <!-- Serviço 7 -->
+                      <div class="bg-purple-100 p-6 rounded-lg shadow-md">
+                        <img src="IMG_0907.webp" alt="Comunicação Telepática Animal" class="w-full h-40 object-cover rounded mb-4">
+                        <h3 class="text-xl font-bold mb-4 text-primary">limpeza profunda com Arcturianos</h3>
+                        <p class="mb-4">Neste atendimento junto com os códigos de luz e dos mestres Arcturianos, faremos resgates e curas de seus fractais que podem ainda estar em sofrimento gerando um forte impacto em sua vida atual...</p>
+                        <p class="font-bold mb-4">
+                            <span class="line-through text-gray-500">R$ 320,00</span>
+                            <span class="text-black">R$ 180,00</span>
+                        </p>
+                        <div class="flex justify-between">
+                            <button onclick="openModal('limpar')" class="bg-secondary text-white px-4 py-2 rounded hover:bg-opacity-80 transition">Mais opções</button>
+                            <a href="#" class="bg-accent text-white px-4 py-2 rounded hover:bg-opacity-80 transition" data-link="https://pay.kiwify.com.br/oBMYnL1">Comprar agora</a>
+                        </div>
+                    </div>
+
+                     <!-- Serviço 8 -->
+                     <div class="bg-purple-100 p-6 rounded-lg shadow-md">
+                        <img src="IMG_0916.webp" alt="Comunicação Telepática Animal" class="w-full h-40 object-cover rounded mb-4">
+                        <h3 class="text-xl font-bold mb-4 text-primary">Cura cristalina com os animais</h3>
+                        <p class="mb-4">Este atendimento é direcionado para os animais que estão em desequilíbrio na saúde, que não estão muito bem emocionalmente, etc..</p>
+                        <p class="font-bold mb-4">
+                            <span class="line-through text-gray-500">R$ 320,00</span>
+                            <span class="text-black">R$ 185,00</span>
+                        </p>
+                        <div class="flex justify-between">
+                            <button onclick="openModal('anime')" class="bg-secondary text-white px-4 py-2 rounded hover:bg-opacity-80 transition">Mais opções</button>
+                            <a href="#" class="bg-accent text-white px-4 py-2 rounded hover:bg-opacity-80 transition" data-link="https://pay.kiwify.com.br/oBMYnL1">Comprar agora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="depoimentos" class="py-16 bg-purple-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center text-primary">Depoimentos</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <p class="mb-4">"As sessões com Magic Vitória mudaram minha vida. Sinto-me mais equilibrada e consciente do que nunca."</p>
+                        <p class="font-bold">- Maria S.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <p class="mb-4">"Recomendo fortemente os serviços de Magic Vitória. Sua abordagem única me ajudou a superar traumas antigos."</p>
+                        <p class="font-bold">- João P.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="py-16 bg-primary text-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center">Entre em Contato</h2>
+                <p class="text-lg text-center mb-8">através das opções abaixo</p>
+                <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8">
+                    <!-- Botão do WhatsApp -->
+                    <a href="https://wa.me/5599999999999"  class="bg-green-500 text-white px-6 py-3 rounded-full font-bold hover:bg-green-600 transition duration-300 flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10.5a7.5 7.5 0 1010.5 10.5L21 21m-7.5-3.5a7.5 7.5 0 10-10.5-10.5m9 0h.01" />
+                        </svg>
+                        <span>WhatsApp</span>
+                    </a>
+                    <!-- Botão do YouTube -->
+                    <a href="https://www.youtube.com/channel/SEU_CANAL"  class="bg-red-500 text-white px-6 py-3 rounded-full font-bold hover:bg-red-600 transition duration-300 flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-6.496 3.752m0-7.504l6.496 3.752M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z" />
+                        </svg>
+                        <span>YouTube</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-purple-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Magic Vitória. Todos os direitos reservados.</p>
+            <p class="text-sm mt-2">
+                Gosta do site? Entre em contato com 
+                <a href="https://wa.me/5541995734257"  class="text-green-400 hover:text-green-300 transition">
+                    Agência ABS
+                </a>.
+            </p>
+        </div>
+    </footer>
+
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+        <div class="bg-white p-8 rounded-lg max-w-2xl w-full mx-4">
+            <!-- Imagem do serviço -->
+            <div class="flex justify-center mb-4">
+                <img id="modal-image" src="" alt="Imagem do Serviço" class="w-28 h-28 object-cover rounded-full">
+            </div>
+            <h2 id="modal-title" class="text-2xl font-semibold text-primary mb-4"></h2>
+            <div id="modal-description" class="text-gray-700 mb-6"></div>
+            <div class="flex justify-end space-x-4">
+                <button onclick="closeModal()" class="bg-gray-300 text-gray-800 px-4 py-2 rounded hover:bg-gray-400 transition">Fechar</button>
+                <a id="modal-buy" href="#" class="bg-accent text-white px-4 py-2 rounded hover:bg-opacity-80 transition">Comprar agora</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalDescription = document.getElementById('modal-description');
+        const modalBuy = document.getElementById('modal-buy');
+
+        const productDescriptions = {
+            ativacao: `
+                <p class="mb-4">Este serviço auxilia no alinhamento com a alma e a verdade divina. Durante a sessão, trabalharemos para ativar seus códigos de luz internos, promovendo uma maior conexão com sua essência espiritual.</p>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Duração: 1 hora</li>
+                    <li>Realizado por vídeo chamada</li>
+                    <li>Valor: R$ 190,00</li>
+                </ul>
+                <p class="font-semibold mb-2">Benefícios:</p>
+                <ul class="list-disc list-inside">
+                    <li>Maior clareza espiritual</li>
+                    <li>Alinhamento com seu propósito de vida</li>
+                    <li>Aumento da vibração energética</li>
+                </ul>
+            `,
+            constelacao: `
+                <p class="mb-4">A Constelação Sistêmica Familiar é uma poderosa ferramenta para resolver questões familiares e ancestrais. Este método permite visualizar e transformar padrões inconscientes que afetam sua vida.</p>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Duração: 2 a 3 horas</li>
+                    <li>Realizado por vídeo chamada</li>
+                    <li>Valor: R$ 250,00</li>
+                </ul>
+                <p class="font-semibold mb-2">Benefícios:</p>
+                <ul class="list-disc list-inside">
+                    <li>Resolução de conflitos familiares</li>
+                    <li>Libertação de padrões ancestrais limitantes</li>
+                    <li>Melhoria nas relações interpessoais</li>
+                </ul>
+            `,
+            comunicacao: `
+                <p class="mb-4">Este serviço permite uma conexão profunda com os animais, ajudando a entender suas necessidades e estados emocionais. Através da comunicação telepática, podemos resolver problemas de comportamento e melhorar o bem-estar do animal.</p>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Atendimento off-line</li>
+                    <li>Relatório detalhado em PDF</li>
+                    <li>Valor: R$ 80,00</li>
+                </ul>
+                <p class="font-semibold mb-2">Benefícios:</p>
+                <ul class="list-disc list-inside">
+                    <li>Melhor compreensão do seu animal de estimação</li>
+                    <li>Resolução de problemas comportamentais</li>
+                    <li>Fortalecimento do vínculo entre humano e animal</li>
+                </ul>
+            `
+            , cosmos: `
+                <p class="mb-4">Neste atendimento trabalhamos através dos códigos de luz toda a sua conexão com seu planeta de origem e consciência maior, também sua conexão com sua família estelar, trabalhamos também limpezas e desbloqueios, crenças, aberturas de canais, ativação de sua memória e DNA. Ao me conectar contigo no momento de ativação de códigos de luz muitas vezes seu eu superior e família estelar se apresentam mostrando coisas sobre você, como sua origem, aparência, e também me guiam a trabalhar em você pontos específicos que você necessita para abrir mais essa sua conexão com as estrelas e seu planeta, também podem trazer mensagens que você precisa neste momento. .</p>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Atendimento por  chamada de vídeo com duração de 1hora</li>
+                    
+                    <li>Valor: R$ 80,00</li>
+                </ul>
+                <p class="font-semibold mb-2">Benefícios:</p>
+                <ul class="list-disc list-inside">
+                    <li>Melhor compreensão do seu animal de estimação</li>
+                    <li>Resolução de problemas comportamentais</li>
+                    <li>Fortalecimento do vínculo entre humano e animal</li>
+                </ul>
+            `
+            , gemeos: `
+                <p class="mb-4">Amor entre conexões de alma é uma das coisas mais belas que existe, se você sente no seu coração que tem uma pessoa especial para você em algum lugar mas que apenas ainda não a conheceu é porque sim realmente tem esse amor que você já sabe inconscientemente que vai vivê-lo e você merece viver um amor elevado, lindo, em uma união profunda. Mesmo que você já esteja em um relacionamento e sente que essa é a pessoa especial este atendimento também pode te ajudar a trazer mais sintonia entre vocês. .</p>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Atendimento por  chamada de vídeo com duração de 1hora</li>
+                    
+                    <li>Valor: R$ 180,00</li>
+                </ul>
+                <p class="font-semibold mb-2">Benefícios:</p>
+                <ul class="list-disc list-inside">
+                    <li>Melhor compreensão do seu animal de estimação</li>
+                    <li>Resolução de problemas comportamentais</li>
+                    <li>Fortalecimento do vínculo entre humano e animal</li>
+                </ul>
+            `
+            , money: `
+                <p class="mb-4">O dinheiro é uma energia muito maravilhosa que merecemos ter em abundância. Se essa energia não está fluindo em sua vida, entra com muita dificuldade ou quando você tem dinheiro ele não para com você, significa que tem um desequilíbrio ocorrendo e através deste atendimento vamos estar olhando para tudo o que estiver necessitando.  .</p>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Atendimento por  chamada de vídeo com duração de 1hora</li>
+                    
+                    <li>Valor: R$ 180,00</li>
+                </ul>
+                <p class="font-semibold mb-2">Benefícios:</p>
+                <ul class="list-disc list-inside">
+                    <li>Melhor compreensão do seu animal de estimação</li>
+                    <li>Resolução de problemas comportamentais</li>
+                    <li>Fortalecimento do vínculo entre humano e animal</li>
+                </ul>
+            `
+            , limpar: `
+                <p class="mb-4">Neste atendimento junto com os códigos de luz e dos mestres Arcturianos, faremos resgates e curas de seus fractais que podem ainda estar em sofrimento gerando um forte impacto em sua vida atual, onde memórias de dores destas outras experiências são ativadas em você..</p>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Atendimento por  chamada de vídeo com duração de 1hora</li>
+                    
+                    <li>Valor: R$ 180,00</li>
+                </ul>
+                <p class="font-semibold mb-2">Benefícios:</p>
+                <ul class="list-disc list-inside">
+                    <li>Melhor compreensão do seu animal de estimação</li>
+                    <li>Resolução de problemas comportamentais</li>
+                    <li>Fortalecimento do vínculo entre humano e animal</li>
+                </ul>
+            `
+            , anime: `
+                <p class="mb-4">Este é um cuidado a mais com o seu animalzinho auxiliando em curas em diversos níveis, aplico energia de cura onde deixo também a espiritualidade mostrar o que precisa ser fortemente trabalhado na energia do animal. Neste atendimento também realizo junto da aplicação de energia de cura cristalina a comunicação telepática com o animalzinho promovendo ao tutor entender melhor como o animal está e o que precisa no momento..</p>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Atendimento por  chamada de vídeo com duração de 1hora</li>
+                    
+                    <li>Valor: R$ 180,00</li>
+                </ul>
+                <p class="font-semibold mb-2">Benefícios:</p>
+                <ul class="list-disc list-inside">
+                    <li>Melhor compreensão do seu animal de estimação</li>
+                    <li>Resolução de problemas comportamentais</li>
+                    <li>Fortalecimento do vínculo entre humano e animal</li>
+                </ul>
+            `
+        };
+
+        function openModal(product) {
+    // Recupera o título e descrição do serviço
+    const card = document.querySelector(`[onclick="openModal('${product}')"]`).closest('.bg-purple-100');
+    const imageSrc = card.querySelector('img').src; // Obtém o src da imagem do card
+    const title = card.querySelector('h3').textContent; // Título do serviço
+
+    // Define o conteúdo do modal
+    document.getElementById('modal-image').src = imageSrc; // Insere a imagem no modal
+    document.getElementById('modal-title').textContent = title;
+    document.getElementById('modal-description').innerHTML = productDescriptions[product];
+    document.getElementById('modal-buy').href = card.querySelector('[data-link]').getAttribute('data-link');
+    
+    // Exibe o modal
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+}
+
+function closeModal() {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+}
+
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add your form submission logic here
+            alert('Obrigado por entrar em contato! Retornaremos em breve.');
+            this.reset();
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+    const pathname = window.location.pathname;
+    if (!pathname.endsWith(".html") && pathname !== "/") {
+        window.location.href = pathname + ".html";
+    }
+});
+    </script>
+</body>
+</html>

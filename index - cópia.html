@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Vitoria - Curas Interiores e Expansão de Consciência</title>
+    <style>
+        :root {
+            --primary-color: #8A2BE2; /* Violeta */
+            --secondary-color: #FF69B4; /* Rosa */
+            --accent-color: #4CAF50; /* Verde para o botão de destaque */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .product {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .product h3 {
+            color: var(--primary-color);
+        }
+
+        .product p {
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0.5rem;
+        }
+
+        .btn-more {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        .btn-buy {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Magic Vitoria</h1>
+        <p>Curas Interiores e Expansão de Consciência</p>
+    </header>
+
+    <div class="container">
+        <div class="products">
+            <div class="product">
+                <h3>Ativação de Códigos de Luz</h3>
+                <p>Alinhamento com a alma e a verdade divina</p>
+                <p>Valor: R$ 190,00</p>
+                <a href="#" class="btn btn-more" data-product="ativacao">Ver mais</a>
+                <a href="#" class="btn btn-buy" data-link="https://pay.kiwify.com.br/oBMYnL1">Comprar agora</a>
+            </div>
+            <div class="product">
+                <h3>Constelação Sistêmica Familiar</h3>
+                <p>Resolução de questões familiares e ancestrais</p>
+                <p>Valor: R$ 250,00</p>
+                <a href="#" class="btn btn-more" data-product="constelacao">Ver mais</a>
+                <a href="#" class="btn btn-buy" data-link="https://pay.kiwify.com.br/oBMYnL1">Comprar agora</a>
+            </div>
+            <div class="product">
+                <h3>Comunicação Telepática Animal</h3>
+                <p>Conexão com animais para entender suas necessidades</p>
+                <p>Valor: R$ 80,00</p>
+                <a href="#" class="btn btn-more" data-product="comunicacao">Ver mais</a>
+                <a href="#" class="btn btn-buy" data-link="https://pay.kiwify.com.br/oBMYnL1">Comprar agora</a>
+            </div>
+            <!-- Adicione mais produtos aqui seguindo o mesmo padrão -->
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <div id="modal-description"></div>
+            <a href="#" id="modal-buy" class="btn btn-buy">Comprar agora</a>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById("modal");
+        const modalTitle = document.getElementById("modal-title");
+        const modalDescription = document.getElementById("modal-description");
+        const modalBuy = document.getElementById("modal-buy");
+        const closeBtn = document.getElementsByClassName("close")[0];
+
+        const productDescriptions = {
+            ativacao: `
+                <h3>Ativação de Códigos de Luz</h3>
+                <p>Este serviço auxilia no alinhamento com a alma e a verdade divina. Durante a sessão, trabalharemos para ativar seus códigos de luz internos, promovendo uma maior conexão com sua essência espiritual.</p>
+                <ul>
+                    <li>Duração: 1 hora</li>
+                    <li>Realizado por vídeo chamada</li>
+                    <li>Valor: R$ 190,00</li>
+                </ul>
+                <p>Benefícios:</p>
+                <ul>
+                    <li>Maior clareza espiritual</li>
+                    <li>Alinhamento com seu propósito de vida</li>
+                    <li>Aumento da vibração energética</li>
+                </ul>
+            `,
+            constelacao: `
+                <h3>Constelação Sistêmica Familiar</h3>
+                <p>A Constelação Sistêmica Familiar é uma poderosa ferramenta para resolver questões familiares e ancestrais. Este método permite visualizar e transformar padrões inconscientes que afetam sua vida.</p>
+                <ul>
+                    <li>Duração: 2 a 3 horas</li>
+                    <li>Realizado por vídeo chamada</li>
+                    <li>Valor: R$ 250,00</li>
+                </ul>
+                <p>Benefícios:</p>
+                <ul>
+                    <li>Resolução de conflitos familiares</li>
+                    <li>Libertação de padrões ancestrais limitantes</li>
+                    <li>Melhoria nas relações interpessoais</li>
+                </ul>
+            `,
+            comunicacao: `
+                <h3>Comunicação Telepática Animal</h3>
+                <p>Este serviço permite uma conexão profunda com os animais, ajudando a entender suas necessidades e estados emocionais. Através da comunicação telepática, podemos resolver problemas de comportamento e melhorar o bem-estar do animal.</p>
+                <ul>
+                    <li>Atendimento off-line</li>
+                    <li>Relatório detalhado em PDF</li>
+                    <li>Valor: R$ 80,00</li>
+                </ul>
+                <p>Benefícios:</p>
+                <ul>
+                    <li>Melhor compreensão do seu animal de estimação</li>
+                    <li>Resolução de problemas comportamentais</li>
+                    <li>Fortalecimento do vínculo entre humano e animal</li>
+                </ul>
+            `
+        };
+
+        document.querySelectorAll('.btn-more').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const product = this.getAttribute('data-product');
+                modalTitle.textContent = this.parentElement.querySelector('h3').textContent;
+                modalDescription.innerHTML = productDescriptions[product];
+                modalBuy.href = this.parentElement.querySelector('.btn-buy').getAttribute('data-link');
+                modal.style.display = "block";
+            });
+        });
+
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        document.querySelectorAll('.btn-buy').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.location.href = this.getAttribute('data-link');
+            });
+        });
+    </script>
+</body>
+</html>

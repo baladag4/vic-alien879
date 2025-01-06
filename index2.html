@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Vitoria - Curas Interiores e Expansão de Consciência</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#8A2BE2',
+                        secondary: '#FF69B4',
+                        accent: '#4CAF50',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins bg-gray-100 text-gray-800">
+    <header class="bg-primary text-white py-8">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold text-center">Magic Vitoria</h1>
+            <p class="text-xl text-center mt-2">Curas Interiores e Expansão de Consciência</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <section class="mb-16">
+            <h2 class="text-3xl font-semibold text-primary mb-6">Bem-vindo ao Seu Caminho de Cura e Expansão</h2>
+            <p class="text-lg mb-4">Olá! Sou Vitória, sua guia espiritual com uma conexão profunda com o mundo espiritual e as energias universais. Minha missão é auxiliar você em sua jornada de cura interior e expansão de consciência.</p>
+            <p class="text-lg mb-4">Através dos meus serviços, ofereço um caminho de autodescoberta e alinhamento espiritual, ajudando você a encontrar equilíbrio, paz e propósito em sua vida.</p>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-3xl font-semibold text-primary mb-6">Nossos Serviços</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-2">Ativação de Códigos de Luz</h3>
+                        <p class="mb-4">Alinhamento com a alma e a verdade divina</p>
+                        <p class="font-bold mb-4">R$ 190,00</p>
+                        <div class="flex justify-between">
+                            <button class="bg-secondary text-white px-4 py-2 rounded hover:bg-opacity-80 transition" onclick="openModal('ativacao')">Ver mais</button>
+                            <a href="#" class="bg-accent text-white px-4 py-2 rounded hover:bg-opacity-80 transition" data-link="https://pay.kiwify.com.br/oBMYnL1">Comprar agora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-2">Constelação Sistêmica Familiar</h3>
+                        <p class="mb-4">Resolução de questões familiares e ancestrais</p>
+                        <p class="font-bold mb-4">R$ 250,00</p>
+                        <div class="flex justify-between">
+                            <button class="bg-secondary text-white px-4 py-2 rounded hover:bg-opacity-80 transition" onclick="openModal('constelacao')">Ver mais</button>
+                            <a href="#" class="bg-accent text-white px-4 py-2 rounded hover:bg-opacity-80 transition" data-link="https://pay.kiwify.com.br/oBMYnL1">Comprar agora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-2">Comunicação Telepática Animal</h3>
+                        <p class="mb-4">Conexão com animais para entender suas necessidades</p>
+                        <p class="font-bold mb-4">R$ 80,00</p>
+                        <div class="flex justify-between">
+                            <button class="bg-secondary text-white px-4 py-2 rounded hover:bg-opacity-80 transition" onclick="openModal('comunicacao')">Ver mais</button>
+                            <a href="#" class="bg-accent text-white px-4 py-2 rounded hover:bg-opacity-80 transition" data-link="https://pay.kiwify.com.br/oBMYnL1">Comprar agora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-3xl font-semibold text-primary mb-6">Por que escolher Magic Vitoria?</h2>
+            <ul class="list-disc list-inside text-lg space-y-2">
+                <li>Experiência profunda em curas interiores e expansão de consciência</li>
+                <li>Abordagem personalizada para cada cliente</li>
+                <li>Resultados comprovados em transformação pessoal</li>
+                <li>Ambiente acolhedor e seguro para seu desenvolvimento espiritual</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="text-3xl font-semibold text-primary mb-6">Entre em Contato</h2>
+            <p class="text-lg mb-4">Estou aqui para ajudar você em sua jornada de autodescoberta e cura. Não hesite em entrar em contato para mais informações ou para agendar uma sessão.</p>
+            <div class="flex space-x-4">
+                <a href="#" class="bg-primary text-white px-6 py-3 rounded-full hover:bg-opacity-80 transition">WhatsApp</a>
+                <a href="#" class="bg-secondary text-white px-6 py-3 rounded-full hover:bg-opacity-80 transition">Instagram</a>
+                <a href="#" class="bg-red-600 text-white px-6 py-3 rounded-full hover:bg-opacity-80 transition">YouTube</a>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center">
+        <div class="bg-white p-8 rounded-lg max-w-2xl w-full mx-4">
+            <h2 id="modal-title" class="text-2xl font-semibold text-primary mb-4"></h2>
+            <div id="modal-description" class="text-gray-700 mb-6"></div>
+            <div class="flex justify-end space-x-4">
+                <button onclick="closeModal()" class="bg-gray-300 text-gray-800 px-4 py-2 rounded hover:bg-gray-400 transition">Fechar</button>
+                <a id="modal-buy" href="#" class="bg-accent text-white px-4 py-2 rounded hover:bg-opacity-80 transition">Comprar agora</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalDescription = document.getElementById('modal-description');
+        const modalBuy = document.getElementById('modal-buy');
+
+        const productDescriptions = {
+            ativacao: `
+                <p class="mb-4">Este serviço auxilia no alinhamento com a alma e a verdade divina. Durante a sessão, trabalharemos para ativar seus códigos de luz internos, promovendo uma maior conexão com sua essência espiritual.</p>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Duração: 1 hora</li>
+                    <li>Realizado por vídeo chamada</li>
+                    <li>Valor: R$ 190,00</li>
+                </ul>
+                <p class="font-semibold mb-2">Benefícios:</p>
+                <ul class="list-disc list-inside">
+                    <li>Maior clareza espiritual</li>
+                    <li>Alinhamento com seu propósito de vida</li>
+                    <li>Aumento da vibração energética</li>
+                </ul>
+            `,
+            constelacao: `
+                <p class="mb-4">A Constelação Sistêmica Familiar é uma poderosa ferramenta para resolver questões familiares e ancestrais. Este método permite visualizar e transformar padrões inconscientes que afetam sua vida.</p>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Duração: 2 a 3 horas</li>
+                    <li>Realizado por vídeo chamada</li>
+                    <li>Valor: R$ 250,00</li>
+                </ul>
+                <p class="font-semibold mb-2">Benefícios:</p>
+                <ul class="list-disc list-inside">
+                    <li>Resolução de conflitos familiares</li>
+                    <li>Libertação de padrões ancestrais limitantes</li>
+                    <li>Melhoria nas relações interpessoais</li>
+                </ul>
+            `,
+            comunicacao: `
+                <p class="mb-4">Este serviço permite uma conexão profunda com os animais, ajudando a entender suas necessidades e estados emocionais. Através da comunicação telepática, podemos resolver problemas de comportamento e melhorar o bem-estar do animal.</p>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Atendimento off-line</li>
+                    <li>Relatório detalhado em PDF</li>
+                    <li>Valor: R$ 80,00</li>
+                </ul>
+                <p class="font-semibold mb-2">Benefícios:</p>
+                <ul class="list-disc list-inside">
+                    <li>Melhor compreensão do seu animal de estimação</li>
+                    <li>Resolução de problemas comportamentais</li>
+                    <li>Fortalecimento do vínculo entre humano e animal</li>
+                </ul>
+            `
+        };
+
+        function openModal(product) {
+            modalTitle.textContent = document.querySelector(`[onclick="openModal('${product}')"]`).closest('.bg-white').querySelector('h3').textContent;
+            modalDescription.innerHTML = productDescriptions[product];
+            modalBuy.href = document.querySelector(`[onclick="openModal('${product}')"]`).closest('.bg-white').querySelector('[data-link]').getAttribute('data-link');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeModal() {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>
