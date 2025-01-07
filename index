@@ -24,7 +24,7 @@
     </script>
 </head>
 <body class="font-poppins bg-purple-50">
-    <header class="bg-primary text-white py-4 sticky top-0 z-50">
+    <header class="bg-gradient-to-r from-purple-900 via-purple-700 to-purple-500 text-white py-4 sticky top-0 z-50">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <h1 class="text-2xl font-bold">Magic Vitória</h1>
             <nav>
@@ -36,15 +36,16 @@
             </nav>
         </div>
     </header>
-
+    
     <main>
-        <section id="hero" class="py-20 bg-primary text-white">
+        <section id="hero" class="py-20 bg-gradient-to-r from-purple-900 via-purple-700 to-purple-500 text-white">
             <div class="container mx-auto px-4 text-center">
                 <h2 class="text-4xl font-bold mb-4">Curas interiores e expansão de consciência</h2>
                 <p class="text-xl mb-8">Descubra o poder da cura interior e expanda sua consciência com Magic Vitória</p>
-                <a href="#servicos" class="bg-white text-primary py-2 px-6 rounded-full font-bold hover:bg-purple-100 transition duration-300">Agende sua consulta</a>
+                <a href="#servicos" class="bg-white text-purple-700 py-2 px-6 rounded-full font-bold hover:bg-purple-100 transition duration-300">Agende sua consulta</a>
             </div>
         </section>
+    
 
         <section id="sobre" class="py-16">
             <div class="container mx-auto px-4">
@@ -76,7 +77,7 @@
                         </p>
                         <div class="flex justify-between">
                             <button onclick="openModal('ativacao')" class="bg-secondary text-white px-4 py-2 rounded hover:bg-opacity-80 transition">Mais opções</button>
-                            <a href="#" class="bg-accent text-white px-4 py-2 rounded hover:bg-opacity-80 transition" data-link="https://pay.kiwify.com.br/oBMYnL1">Comprar agora</a>
+                            <a href="https://pay.kiwify.com.br/oBMYnL1" class="bg-accent text-white px-4 py-2 rounded hover:bg-opacity-80 transition" data-link="https://pay.kiwify.com.br/oBMYnL1">Comprar agora</a>
                         </div>
                     </div>
                     <!-- Serviço 2 -->
@@ -90,7 +91,7 @@
                         </p>
                         <div class="flex justify-between">
                             <button onclick="openModal('constelacao')" class="bg-secondary text-white px-4 py-2 rounded hover:bg-opacity-80 transition">Mais opções</button>
-                            <a href="#" class="bg-accent text-white px-4 py-2 rounded hover:bg-opacity-80 transition" data-link="https://pay.kiwify.com.br/oBMYnL1">Comprar agora</a>
+                            <a href="https://pay.kiwify.com.br/oBMYnL1" class="bg-accent text-white px-4 py-2 rounded hover:bg-opacity-80 transition" data-link="https://pay.kiwify.com.br/oBMYnL1">Comprar agora</a>
                         </div>
                     </div>
                     <!-- Serviço 3 -->
@@ -104,7 +105,7 @@
                         </p>
                         <div class="flex justify-between">
                             <button onclick="openModal('comunicacao')" class="bg-secondary text-white px-4 py-2 rounded hover:bg-opacity-80 transition">Mais opções</button>
-                            <a href="#" class="bg-accent text-white px-4 py-2 rounded hover:bg-opacity-80 transition" data-link="https://pay.kiwify.com.br/oBMYnL1">Comprar agora</a>
+                            <a href="https://pay.kiwify.com.br/oBMYnL1" class="bg-accent text-white px-4 py-2 rounded hover:bg-opacity-80 transition" data-link="https://pay.kiwify.com.br/oBMYnL1">Comprar agora</a>
                         </div>
                     </div>
 
@@ -119,7 +120,7 @@
                         </p>
                         <div class="flex justify-between">
                             <button onclick="openModal('cosmos')" class="bg-secondary text-white px-4 py-2 rounded hover:bg-opacity-80 transition">Mais opções</button>
-                            <a href="#" class="bg-accent text-white px-4 py-2 rounded hover:bg-opacity-80 transition" data-link="https://pay.kiwify.com.br/oBMYnL1">Comprar agora</a>
+                            <a href="https://pay.kiwify.com.br/oBMYnL1" class="bg-accent text-white px-4 py-2 rounded hover:bg-opacity-80 transition" data-link="https://pay.kiwify.com.br/oBMYnL1">Comprar agora</a>
                         </div>
                     </div>
 
@@ -134,7 +135,7 @@
                         </p>
                         <div class="flex justify-between">
                             <button onclick="openModal('gemeos')" class="bg-secondary text-white px-4 py-2 rounded hover:bg-opacity-80 transition">Mais opções</button>
-                            <a href="#" class="bg-accent text-white px-4 py-2 rounded hover:bg-opacity-80 transition" data-link="https://pay.kiwify.com.br/oBMYnL1">Comprar agora</a>
+                            <a href="https://pay.kiwify.com.br/oBMYnL1" class="bg-accent text-white px-4 py-2 rounded hover:bg-opacity-80 transition" data-link="https://pay.kiwify.com.br/oBMYnL1">Comprar agora</a>
                         </div>
                     </div>
 
@@ -149,7 +150,7 @@
                         </p>
                         <div class="flex justify-between">
                             <button onclick="openModal('money')" class="bg-secondary text-white px-4 py-2 rounded hover:bg-opacity-80 transition">Mais opções</button>
-                            <a href="#" class="bg-accent text-white px-4 py-2 rounded hover:bg-opacity-80 transition" data-link="https://pay.kiwify.com.br/oBMYnL1">Comprar agora</a>
+                            <a href="https://pay.kiwify.com.br/oBMYnL1" class="bg-accent text-white px-4 py-2 rounded hover:bg-opacity-80 transition" data-link="https://pay.kiwify.com.br/oBMYnL1">Comprar agora</a>
                         </div>
                     </div>
 
@@ -164,7 +165,7 @@
                         </p>
                         <div class="flex justify-between">
                             <button onclick="openModal('limpar')" class="bg-secondary text-white px-4 py-2 rounded hover:bg-opacity-80 transition">Mais opções</button>
-                            <a href="#" class="bg-accent text-white px-4 py-2 rounded hover:bg-opacity-80 transition" data-link="https://pay.kiwify.com.br/oBMYnL1">Comprar agora</a>
+                            <a href="https://pay.kiwify.com.br/oBMYnL1" class="bg-accent text-white px-4 py-2 rounded hover:bg-opacity-80 transition" data-link="https://pay.kiwify.com.br/oBMYnL1">Comprar agora</a>
                         </div>
                     </div>
 
@@ -179,7 +180,7 @@
                         </p>
                         <div class="flex justify-between">
                             <button onclick="openModal('anime')" class="bg-secondary text-white px-4 py-2 rounded hover:bg-opacity-80 transition">Mais opções</button>
-                            <a href="#" class="bg-accent text-white px-4 py-2 rounded hover:bg-opacity-80 transition" data-link="https://pay.kiwify.com.br/oBMYnL1">Comprar agora</a>
+                            <a href="https://pay.kiwify.com.br/oBMYnL1" class="bg-accent text-white px-4 py-2 rounded hover:bg-opacity-80 transition" data-link="https://pay.kiwify.com.br/oBMYnL1">Comprar agora</a>
                         </div>
                     </div>
                 </div>
@@ -208,7 +209,7 @@
                 <p class="text-lg text-center mb-8">através das opções abaixo</p>
                 <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8">
                     <!-- Botão do WhatsApp -->
-                    <a href="https://wa.me/5599999999999"  class="bg-green-500 text-white px-6 py-3 rounded-full font-bold hover:bg-green-600 transition duration-300 flex items-center space-x-2">
+                    <a href="https://api.whatsapp.com/send/?phone=5535997203889&text&type=phone_number&app_absent=0&fbclid=PAY2xjawG0dTBleHRuA2FlbQIxMAABpgL9b1hHhgTDEG-zNs960Y7v2Mvm3MVBxDO_LoOIz1X5OmaCbFrQCZ9p5w_aem_KW6Gubf6jrsFfNnyhI5KIw"  class="bg-green-500 text-white px-6 py-3 rounded-full font-bold hover:bg-green-600 transition duration-300 flex items-center space-x-2">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10.5a7.5 7.5 0 1010.5 10.5L21 21m-7.5-3.5a7.5 7.5 0 10-10.5-10.5m9 0h.01" />
                         </svg>
@@ -265,7 +266,7 @@
                 <ul class="list-disc list-inside mb-4">
                     <li>Duração: 1 hora</li>
                     <li>Realizado por vídeo chamada</li>
-                    <li>Valor: R$ 190,00</li>
+                    <li>Valor: R$ 180,00</li>
                 </ul>
                 <p class="font-semibold mb-2">Benefícios:</p>
                 <ul class="list-disc list-inside">
@@ -307,7 +308,7 @@
                 <ul class="list-disc list-inside mb-4">
                     <li>Atendimento por  chamada de vídeo com duração de 1hora</li>
                     
-                    <li>Valor: R$ 80,00</li>
+                    <li>Valor: R$ 180,00</li>
                 </ul>
                 <p class="font-semibold mb-2">Benefícios:</p>
                 <ul class="list-disc list-inside">
@@ -361,9 +362,9 @@
             , anime: `
                 <p class="mb-4">Este é um cuidado a mais com o seu animalzinho auxiliando em curas em diversos níveis, aplico energia de cura onde deixo também a espiritualidade mostrar o que precisa ser fortemente trabalhado na energia do animal. Neste atendimento também realizo junto da aplicação de energia de cura cristalina a comunicação telepática com o animalzinho promovendo ao tutor entender melhor como o animal está e o que precisa no momento..</p>
                 <ul class="list-disc list-inside mb-4">
-                    <li>Atendimento por  chamada de vídeo com duração de 1hora</li>
+                    <li>O atendimento é realizado de maneira off-line</li>
                     
-                    <li>Valor: R$ 180,00</li>
+                    <li>Valor: R$ 185,00</li>
                 </ul>
                 <p class="font-semibold mb-2">Benefícios:</p>
                 <ul class="list-disc list-inside">
