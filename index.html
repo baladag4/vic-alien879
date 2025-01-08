@@ -240,19 +240,134 @@
     </footer>
 
     <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
-        <div class="bg-white p-8 rounded-lg max-w-2xl w-full mx-4">
+        <div class="bg-white p-6 rounded-lg max-w-lg w-full mx-4 md:mx-auto overflow-hidden relative">
+            <!-- Botão de Fechar -->
+            <button onclick="closeModal()" class="absolute top-4 right-4 bg-gray-300 text-gray-800 px-3 py-1 rounded-full hover:bg-gray-400 transition">
+                Fechar
+            </button>
+    
             <!-- Imagem do serviço -->
-            <div class="flex justify-center mb-4">
-                <img id="modal-image" src="" alt="Imagem do Serviço" class="w-28 h-28 object-cover rounded-full">
+            <div class="flex justify-center mb-4 mt-8">
+                <img id="modal-image" src="" alt="Imagem do Serviço" class="w-28 h-28 object-cover rounded-full shadow">
             </div>
-            <h2 id="modal-title" class="text-2xl font-semibold text-primary mb-4"></h2>
-            <div id="modal-description" class="text-gray-700 mb-6"></div>
-            <div class="flex justify-end space-x-4">
-                <button onclick="closeModal()" class="bg-gray-300 text-gray-800 px-4 py-2 rounded hover:bg-gray-400 transition">Fechar</button>
-                <a id="modal-buy" href="#" class="bg-accent text-white px-4 py-2 rounded hover:bg-opacity-80 transition">Comprar agora</a>
+    
+            <!-- Título -->
+            <h2 id="modal-title" class="text-2xl font-semibold text-primary mb-4 text-center"></h2>
+    
+            <!-- Descrição -->
+            <div id="modal-description" class="text-gray-700 mb-6 text-justify"></div>
+    
+            <!-- Botão "Comprar agora" -->
+            <div class="flex justify-center mt-4">
+                <a id="modal-buy" href="#" class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition w-full md:w-auto text-center font-bold">
+                    Comprar agora
+                </a>
             </div>
         </div>
     </div>
+
+    <style>
+        /* Configuração geral do modal */
+        #modal {
+            display: none; /* Inicialmente escondido */
+            position: fixed;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+            justify-content: center;
+            align-items: center;
+            z-index: 50;
+        }
+    
+        #modal.flex {
+            display: flex; /* Exibe o modal quando a classe 'flex' é adicionada */
+        }
+    
+        #modal div {
+            position: relative;
+            background: white;
+            padding: 24px;
+            border-radius: 12px;
+            max-width: 700px; /* Largura máxima no desktop */
+            width: 90%; /* Responsivo: até 90% da largura */
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+            max-height: 90vh; /* Limita a altura do modal em 90% da viewport */
+            overflow-y: auto; /* Rolagem habilitada para conteúdos longos */
+        }
+    
+        /* Botão de fechar */
+        #modal button {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: #e2e8f0; /* Cinza claro */
+            color: #4a5568; /* Cinza escuro */
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 10; /* Garantir que não sobreponha outros elementos */
+        }
+    
+        #modal button:hover {
+            background: #cbd5e0; /* Cinza mais escuro ao passar o mouse */
+        }
+    
+        /* Botão "Comprar agora" */
+        #modal a {
+            background-color: #4caf50; /* Verde (accent) */
+            color: white;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+            text-align: center;
+        }
+    
+        #modal a:hover {
+            background-color: #45a049; /* Tom mais escuro no hover */
+        }
+    
+        /* Ajustes para telas menores */
+        @media (max-width: 768px) {
+            #modal div {
+                max-height: 90vh; /* Limita a altura no mobile */
+                overflow-y: auto; /* Adiciona rolagem, se necessário */
+            }
+    
+            #modal a {
+                width: 100%; /* Botão "Comprar agora" ocupa toda a largura */
+            }
+    
+            #modal button {
+                top: 8px; /* Ajusta a posição do botão de fechar */
+                right: 8px;
+            }
+        }
+    
+        /* Ajustes para telas maiores (desktop) */
+        @media (min-width: 1024px) {
+            #modal div {
+                max-width: 700px; /* Aumenta a largura do modal no desktop */
+                padding: 32px; /* Mais espaçamento interno */
+            }
+    
+            #modal h2 {
+                font-size: 2rem; /* Título maior no desktop */
+            }
+    
+            #modal button {
+                top: 24px; /* Ajusta a posição do botão de fechar */
+                right: 24px;
+            }
+    
+            #modal a {
+                width: auto; /* Botão "Comprar agora" tem largura automática */
+            }
+        }
+    </style>
+
+    
+    
+    
 
     <script>
         const modal = document.getElementById('modal');
